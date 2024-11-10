@@ -1,0 +1,214 @@
+@import url('reset.css');
+
+body {
+    background-color: black;
+}
+
+.logo {
+    width: 300px; 
+    height: 300px; 
+    margin: auto; 
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+ 
+  }
+
+  .logo::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 250px; 
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.267); 
+    border-radius: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: -1; 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .banner-content {
+    position: relative; 
+    z-index: 1; 
+  }
+     
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 605px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(193, 198, 199); 
+    text-align: center;
+  }
+  
+  .banner-content {
+    max-width: 1440px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-weight: 900; 
+    font-size: 40px;
+    text-transform: uppercase;
+    background-image: linear-gradient(rgb(12, 99, 161), rgba(51, 168, 219, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 200px;
+    letter-spacing: -2px; 
+  }
+  
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    margin: 16px 0 24px;
+  }
+
+    .banner .banner-content button {
+    color: #3498db;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    border-image-slice: 10;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  main {
+    border-top: 1px solid #33A8DB80;
+    padding-top: 20px;
+  }
+
+  h2 {
+    color: #3498db;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 80px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  #course-content p{
+    color: rgb(193, 198, 199);
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #course-content .modules-list {
+    margin: 24px 0;
+    padding-bottom: 24px; 
+  }
+
+  #course-content .modules-list .module {
+    color: rgb(193, 198, 199);
+    font-size: 18px;
+    text-align: center; 
+    width: 35%; 
+    margin: 0 auto 24px; 
+    padding: 15px;
+    background-color: #252525;
+    border: 1px solid #33A8DB;
+    border-radius: 30px; 
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.363); 
+}
+
+#course-content .modules-list .module span {
+  color: #33A8DB;
+}
+
+#transform-world {
+    position: relative; 
+    overflow: hidden; 
+    width: 100%;
+    height: 560px;
+    padding: 200px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/woman-code.png");
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+}
+
+#transform-world p {
+    white-space: pre-line;
+    text-transform: lowercase;
+    position: absolute;
+    top: 35%; 
+    left: 10%;
+    text-shadow:  2px 4px rgba(52, 152, 219, 0.7), 0 0 25px rgba(52, 152, 219, 0.8), 0 0 5px rgba(52, 152, 219, 1); 
+    font-size: 42px;
+    color: rgb(255, 255, 255); 
+    font-weight: 800; 
+    
+}
+
+#professional-challenges {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    height: 100vh;
+    padding: 20px; 
+}
+
+#professional-challenges h2 {
+    color: #3498db;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 80px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#professional-challenges img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#professional-challenges p {
+    text-align: center;
+    color: rgb(193, 198, 199);
+    font-size: 16px;
+    max-width: 800px;
+}
+
+footer {
+    border-top: 1px solid #33A8DB80;
+    display: flex;
+    background: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0; 
+}
+
+footer a {
+  color: #33A8DB;
+  font-weight: bold;
+  text-decoration: none;
+}
